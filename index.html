@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Merhaba, Türkiye! – Our Interview</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f8f8;--ink:#10303a;--muted:#4b6a73;--tile:#0b6e8a;--tile-ink:#fff;--tulip:#d2342e;--card:#ffffff;--line:#c4dbe0;--bubA:#d8eef3;--bubB:#fde6e3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1b20;--ink:#e6f3f5;--muted:#9bbcc4;--tile:#2aa3c4;--tile-ink:#06222b;--tulip:#ff7a70;--card:#12292f;--line:#24424a;--bubA:#143a45;--bubB:#40201e}}
+:root[data-theme="dark"]{--bg:#0c1b20;--ink:#e6f3f5;--muted:#9bbcc4;--tile:#2aa3c4;--tile-ink:#06222b;--tulip:#ff7a70;--card:#12292f;--line:#24424a;--bubA:#143a45;--bubB:#40201e}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.1rem/1.65 "Newsreader",Georgia,serif}
+h1,h2,h3,.sp{font-family:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--tulip);outline-offset:2px}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{display:flex;gap:18px;flex-wrap:wrap;padding:16px 0;font-family:"Bricolage Grotesque",sans-serif;font-weight:500;font-size:.95rem}
+nav a{text-decoration:none;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--tulip)}
+.hero{padding:40px 0 56px}
+.hero h1{font-size:clamp(3rem,13vw,7.5rem);line-height:.92;margin:0;font-weight:800;letter-spacing:-.03em}
+.hero h1 span{display:block;color:var(--tile)}
+.hero p{max-width:34em;margin:24px 0 0;font-size:1.25rem;color:var(--muted)}
+.bubbles{display:flex;gap:10px;margin-top:28px;flex-wrap:wrap}
+.pill{padding:8px 16px;border-radius:999px;background:var(--bubA);font-family:"Bricolage Grotesque",sans-serif;font-weight:500}
+.pill.b{background:var(--bubB)}
+section{padding:48px 0;border-top:2px solid var(--line)}
+h2{font-size:clamp(1.8rem,5vw,2.6rem);margin:0 0 8px;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:0 0 24px;max-width:38em}
+.names{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px}
+.names label{display:flex;flex-direction:column;font-family:"Bricolage Grotesque",sans-serif;font-size:.9rem;gap:4px}
+.names input{font:inherit;font-size:1.05rem;padding:8px 12px;border:2px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);width:200px;max-width:100%}
+.phase{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.15rem;margin:36px 0 12px;color:var(--tile)}
+.msg{display:flex;flex-direction:column;max-width:82%;margin:10px 0}
+.msg.b{margin-left:auto;align-items:flex-end}
+.msg .sp{font-size:.85rem;font-weight:500;color:var(--muted);margin:0 8px 3px}
+.msg p{margin:0;padding:12px 18px;border-radius:20px 20px 20px 4px;background:var(--bubA)}
+.msg.b p{border-radius:20px 20px 4px 20px;background:var(--bubB)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.place{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:18px}
+.place h3{margin:0 0 4px;font-size:1.2rem}
+.place small{font-family:"Bricolage Grotesque",sans-serif;color:var(--tulip);font-weight:500}
+.place p{margin:8px 0 0;font-size:1rem}
+.video{background:var(--card);border:2px dashed var(--tile);border-radius:14px;padding:24px;text-align:center}
+.video video{width:100%;max-height:60vh;border-radius:10px;background:#000;display:none}
+.btn{display:inline-block;margin-top:12px;padding:10px 20px;border-radius:999px;border:0;background:var(--tile);color:var(--tile-ink);font:500 1rem "Bricolage Grotesque",sans-serif;cursor:pointer}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{margin:8px 0}
+.steps label{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.steps input{width:22px;height:22px;margin-top:4px;accent-color:var(--tulip)}
+.steps h3{font-size:1.1rem;margin:28px 0 6px}
+#prog{font-family:"Bricolage Grotesque",sans-serif;margin-top:20px;font-weight:500}
+footer{padding:36px 0;color:var(--muted);font-size:.95rem;border-top:2px solid var(--line)}
+@media (max-width:520px){.msg{max-width:94%}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Sections"><a href="#dialogue">Dialogue</a><a href="#places">Places</a><a href="#food">Food</a></nav>
+
+<header class="hero">
+<h1>Merhaba,<span>Türkiye!</span></h1>
+<p>A tourist has just arrived in Türkiye and meets a local student. This is their interview.</p>
+<div class="bubbles"><span class="pill">Student A: local student</span><span class="pill b">Student B: tourist</span></div>
+</header>
+
+<section id="dialogue">
+<h2>Our interview script</h2>
+<p class="lead">Type your names and the whole dialogue updates. Edit the lines to match what you want to say.</p>
+<div class="names">
+<label>Student A (local)<input id="na" value="Efe" autocomplete="off"></label>
+<label>Student B (tourist)<input id="nb" value="Ahmet Necati" autocomplete="off"></label>
+</div>
+
+<div class="phase">1. Warm greeting</div>
+<div class="msg a"><span class="sp n-a"></span><p>Hello, everyone! Welcome to Türkiye! I’m a student here, and today I’m talking to a visitor.</p></div>
+<div class="msg b"><span class="sp n-b"></span><p>Hi! Thank you. I’m a tourist, and this is my first day in Türkiye!</p></div>
+
+<div class="phase">2. Introducing ourselves</div>
+<div class="msg a"><span class="sp n-a"></span><p>My name is <b class="n-a"></b>. I’m Turkish, and I speak Turkish and English. The capital city of my country is Ankara. And you?</p></div>
+<div class="msg b"><span class="sp n-b"></span><p>Nice to meet you! I’m <b class="n-b"></b>. I’m British, and I speak English. The capital city of my country is London.</p></div>
+
+<div class="phase">3. Interview questions</div>
+<div class="msg b"><span class="sp n-b"></span><p><b class="n-a"></b>, which city should I visit first?</p></div>
+<div class="msg a"><span class="sp n-a"></span><p>Istanbul! It’s on two continents. You can visit Hagia Sophia, the Blue Mosque and the Grand Bazaar.</p></div>
+<div class="msg b"><span class="sp n-b"></span><p>What can I do in Cappadocia?</p></div>
+<div class="msg a"><span class="sp n-a"></span><p>You can take a hot air balloon ride at sunrise and explore the fairy chimneys.</p></div>
+<div class="msg a"><span class="sp n-a"></span><p>Now it’s my turn. <b class="n-b"></b>, what do you want to do in Türkiye?</p></div>
+<div class="msg b"><span class="sp n-b"></span><p>I want to swim at the beaches in Antalya and walk through the ancient city of Ephesus.</p></div>
+<div class="msg a"><span class="sp n-a"></span><p>What traditional food do you want to try?</p></div>
+<div class="msg b"><span class="sp n-b"></span><p>I don’t know much about Turkish food. What do you recommend?</p></div>
+<div class="msg a"><span class="sp n-a"></span><p>Start with a Turkish breakfast: cheese, olives, tomatoes, eggs and simit. For lunch, try a kebab or lahmacun, and have baklava for dessert.</p></div>
+<div class="msg b"><span class="sp n-b"></span><p>Wow, I’m hungry already! Is Turkish tea special?</p></div>
+<div class="msg a"><span class="sp n-a"></span><p>Yes! We drink çay in small tulip-shaped glasses. Offering tea to guests is a sign of hospitality.</p></div>
+
+<div class="phase">4. Confident goodbye</div>
+<div class="msg a"><span class="sp n-a"></span><p>Thank you for watching. Enjoy your stay in Türkiye!</p></div>
+<div class="msg b"><span class="sp n-b"></span><p>Teşekkürler! Hoşça kalın, bye!</p></div>
+</section>
+
+<section id="places">
+<h2>Places in our dialogue</h2>
+<p class="lead">Tourist attractions we talk about.</p>
+<div class="grid">
+<div class="place"><h3>Istanbul</h3><small>History and city life</small><p>Hagia Sophia, the Blue Mosque, the Grand Bazaar and a ferry across the Bosphorus.</p></div>
+<div class="place"><h3>Cappadocia</h3><small>Landscape</small><p>Fairy chimneys, underground cities and hot air balloons at sunrise.</p></div>
+<div class="place"><h3>Antalya</h3><small>Sea and old town</small><p>Mediterranean beaches and the historic Kaleiçi district.</p></div>
+<div class="place"><h3>Ephesus</h3><small>Ancient city</small><p>Roman streets, a huge theatre and the Library of Celsus.</p></div>
+<div class="place"><h3>Pamukkale</h3><small>Nature</small><p>White terraces filled with warm thermal water.</p></div>
+</div>
+</section>
+
+<section id="food">
+<h2>Food and drink</h2>
+<p class="lead">What our tourist tries in Türkiye.</p>
+<div class="grid">
+<div class="place"><h3>Turkish breakfast</h3><small>Morning</small><p>Cheese, olives, tomatoes, eggs and fresh bread on a big table.</p></div>
+<div class="place"><h3>Kebab</h3><small>Main dish</small><p>Grilled meat, often served with rice, bread and salad.</p></div>
+<div class="place"><h3>Lahmacun</h3><small>Street food</small><p>A thin, crispy flatbread with minced meat and herbs.</p></div>
+<div class="place"><h3>Simit</h3><small>Snack</small><p>A round bread covered with sesame seeds, sold on the street.</p></div>
+<div class="place"><h3>Baklava</h3><small>Dessert</small><p>Thin layers of pastry with nuts and sweet syrup.</p></div>
+<div class="place"><h3>Çay</h3><small>Drink</small><p>Turkish tea in small tulip-shaped glasses. Offering it is a sign of hospitality.</p></div>
+</div>
+</section>
+
+<footer>An English class E-Portfolio project. Dialogue by <span class="n-a"></span> and <span class="n-b"></span>.<br><strong>Website prepared by: Efe Karabakıroğlu</strong></footer>
+</div>
+
+<script>
+(function(){
+var na=document.getElementById('na'),nb=document.getElementById('nb');
+function names(){
+document.querySelectorAll('.n-a').forEach(function(e){e.textContent=na.value||'Student A'});
+document.querySelectorAll('.n-b').forEach(function(e){e.textContent=nb.value||'Student B'});
+}
+na.addEventListener('input',names);nb.addEventListener('input',names);names();
+})();
+</script>
+</body>
+</html>
